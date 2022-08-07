@@ -19,8 +19,10 @@ const launchRazorPay = () => {
 const Movie = () => {
   return (
     <>
-      <div className="w-full h-full">
+     <div className="container">
+      <div className="w-80 h-500">
       <img src="https://www.axn-asia.com/sites/axn-asia.com/files/ct_series_f_primary_image/spiderman_homecoming_-_keyart.jpg" />
+      </div>
       </div>
       <button onClick={launchRazorPay} class="m-16 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
   Book Now

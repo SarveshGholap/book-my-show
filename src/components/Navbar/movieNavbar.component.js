@@ -17,20 +17,33 @@ const NavSm = () => {
     </>
   )
 };
-const NavLg = () => {};
+const NavLg = () => {
+  return (
+    <>
+    <div className="w-full flex gap-3 items-center bg-white px-3 py-2 border-rounded">
+    <BiSearch />
+    <input
+    type="search"
+    className="w-full"
+    placeholder="Search for Movies, Events, Plays, Sports and Activities"
+    />
+    </div>
+    </>
+  )
+};
 
 const MovieNavbar = () => {
 return (
   <>
-   <nav className="px-2 py-4">
+   <nav className="bg-gray-800 px-2 py-4">
       <div className="md:hidden">{/*Mobile Screen*/}
       <NavSm />
       </div>
       <div className="hidden md:block lg:hidden">{/*Tablet Screen*/}
       <NavSm />
       </div>
-      <div className="bg-gray-800 hidden lg:flex">{/*Large Screen*/}
-       
+      <div className="px-20">{/*Large Screen*/}
+      <NavLg />
       </div>
    </nav>
   </>
